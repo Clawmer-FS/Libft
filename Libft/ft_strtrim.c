@@ -6,7 +6,7 @@
 /*   By: jsuzanne <jsuzanne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 15:11:43 by jsuzanne          #+#    #+#             */
-/*   Updated: 2022/01/13 11:54:48 by jsuzanne         ###   ########.fr       */
+/*   Updated: 2022/01/13 17:18:59 by jsuzanne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,12 @@ static int	to_cut(char c, char *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int	start;
-	int	end;
-	char *res;
+	int		start;
+	int		end;
+	char	*res;
 
 	if (!s1)
-		return(NULL);
+		return (NULL);
 	start = 0;
 	end = ft_strlen(s1) - 1;
 	while (s1[start] && to_cut(s1[start], *set))

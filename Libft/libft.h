@@ -6,7 +6,7 @@
 /*   By: jsuzanne <jsuzanne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 12:50:55 by jsuzanne          #+#    #+#             */
-/*   Updated: 2022/01/13 14:47:45 by jsuzanne         ###   ########.fr       */
+/*   Updated: 2022/01/13 17:32:11 by jsuzanne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,7 @@ char			*ft_substr(char const *s, unsigned int start, size_t len); //testear
 char			*ft_strjoin(char const *s1, char const *s2); //testear
 char			*ft_strtrim(char const *s1, char const *set); //testear
 char			**ft_split(const char *s, char c);
+char			*ft_itoa(int n);
+char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 #endif /* LIBFT_H */
