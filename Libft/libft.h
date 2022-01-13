@@ -6,7 +6,7 @@
 /*   By: jsuzanne <jsuzanne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 12:50:55 by jsuzanne          #+#    #+#             */
-/*   Updated: 2022/01/13 11:21:07 by jsuzanne         ###   ########.fr       */
+/*   Updated: 2022/01/13 14:47:45 by jsuzanne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ void			*ft_calloc(size_t nitems, size_t size);
 char			*ft_strdup(const char *s);
 char			*ft_substr(char const *s, unsigned int start, size_t len); //testear
 char			*ft_strjoin(char const *s1, char const *s2); //testear
-char			*ft_strtrim(char const *s1, char const *set); //ToDo
+char			*ft_strtrim(char const *s1, char const *set); //testear
+char			**ft_split(const char *s, char c);
 
 #endif /* LIBFT_H */
