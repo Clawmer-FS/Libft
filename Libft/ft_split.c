@@ -6,7 +6,7 @@
 /*   By: jsuzanne <jsuzanne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/13 11:53:05 by jsuzanne          #+#    #+#             */
-/*   Updated: 2022/01/13 14:48:18 by jsuzanne         ###   ########.fr       */
+/*   Updated: 2022/01/14 12:05:13 by jsuzanne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static char	**mallerror(char **s)
 	return (NULL);
 }
 
-static int	count_words(char *s, char c)
+static int	count_words(const char *s, char c)
 {
 	int	i;
 	int	count;
@@ -47,7 +47,7 @@ static int	count_words(char *s, char c)
 	return (count);
 }
 
-static char	*get_word(char *s, char c, int *index)
+static char	*get_word(const char *s, char c, int *index)
 {
 	char	*copy;
 	size_t	wordlen;
@@ -89,6 +89,8 @@ char	**ft_split(const char *s, char c)
 		return (NULL);
 	words = count_words(s, c);
 	res = malloc(sizeof(char *) * (words + 1));
+	if (!res)
+		return (NULL);
 	while (i < words)
 	{
 		res[i] = get_word(s, c, &index);

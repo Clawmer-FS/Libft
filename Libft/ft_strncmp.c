@@ -6,11 +6,11 @@
 /*   By: jsuzanne <jsuzanne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 09:51:40 by jsuzanne          #+#    #+#             */
-/*   Updated: 2022/01/11 11:58:21 by jsuzanne         ###   ########.fr       */
+/*   Updated: 2022/01/14 12:20:40 by jsuzanne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_strncmp(const char *s1, const char *s2, unsigned int n)
 {
 	while (*s1 != '\0' && *s2 != '\0' && n > 0)
 	{

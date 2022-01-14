@@ -6,11 +6,11 @@
 /*   By: jsuzanne <jsuzanne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 17:22:41 by jsuzanne          #+#    #+#             */
-/*   Updated: 2022/01/11 14:05:52 by jsuzanne         ###   ########.fr       */
+/*   Updated: 2022/01/14 11:48:09 by jsuzanne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	negative;
 	int	number;

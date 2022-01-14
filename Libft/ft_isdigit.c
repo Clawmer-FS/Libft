@@ -6,13 +6,13 @@
 /*   By: jsuzanne <jsuzanne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 12:22:52 by jsuzanne          #+#    #+#             */
-/*   Updated: 2022/01/10 14:16:20 by jsuzanne         ###   ########.fr       */
+/*   Updated: 2022/01/14 14:04:27 by jsuzanne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
-	if (c >= 0 && c <= 9)
+	if (c >= '0' && c <= '9')
 		return (1);
 	else
 		return (0);

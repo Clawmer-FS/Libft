@@ -6,11 +6,13 @@
 /*   By: jsuzanne <jsuzanne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 14:37:57 by jsuzanne          #+#    #+#             */
-/*   Updated: 2022/01/10 17:29:50 by jsuzanne         ###   ########.fr       */
+/*   Updated: 2022/01/14 11:50:30 by jsuzanne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
 	unsigned long	i;
 

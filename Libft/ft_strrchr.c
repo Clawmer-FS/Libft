@@ -6,20 +6,22 @@
 /*   By: jsuzanne <jsuzanne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 11:41:44 by jsuzanne          #+#    #+#             */
-/*   Updated: 2022/01/11 11:46:53 by jsuzanne         ###   ########.fr       */
+/*   Updated: 2022/01/14 12:12:56 by jsuzanne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strrchr(const char *str, int c)
 {
-	char	*ptr;
+	int	i;
 
-	ptr = 0;
-	while (*str)
+	i = ft_strlen(str);
+	while (i >= 0)
 	{
-		if (str[0] == c)
-			ptr = str;
-		str++;
+		if (str[i] == (char)c)
+			return ((char *) &str[i]);
+		i--;
 	}
-	return (ptr);
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: jsuzanne <jsuzanne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 15:03:07 by jsuzanne          #+#    #+#             */
-/*   Updated: 2022/01/11 15:09:03 by jsuzanne         ###   ########.fr       */
+/*   Updated: 2022/01/14 12:00:32 by jsuzanne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	s1len = ft_strlen(s1);
 	s2len = ft_strlen(s2);
-	res = malloc(sizeof(char) * (i + j + 1));
+	res = malloc(sizeof(char) * (s1len + s2len + 1));
 	if (!res)
 		return (0);
 	i = 0;
@@ -38,5 +38,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		j++;
 	}
 	res [i + j] = '\0';
-	retrun (res);
+	return (res);
 }
